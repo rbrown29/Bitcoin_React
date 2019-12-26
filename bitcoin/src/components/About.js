@@ -1,11 +1,16 @@
 import React from 'react';
 import Header from './Header';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect} from "react-router-dom";
 
 class About extends React.Component {
 	render () {
 		return (
 			<div>
-				<Header />
+			<ul>	
+			<li><Link to="/">Home |</Link></li>
+			 <li><Link to="/Price"> Crypto Price |</Link></li>
+			</ul>	
+			<Header />
 			<center><h3 className="h31">About Bitcoin</h3></center>
 			<div className="div1">
 			<h3>

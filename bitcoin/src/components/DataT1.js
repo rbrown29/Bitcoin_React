@@ -16,8 +16,10 @@ class DataT1 extends React.Component {
 	    			<dt>Webpage: <a href={article.url} target="_blank" rel="noopener noreferrer">{article.source.name}</a></dt>
 	    			<dd id="webpage"></dd>
 					</dl>
-			)}
+					
+				)}
 	    </div>
+
 
 		);
 

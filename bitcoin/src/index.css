@@ -61,4 +61,50 @@ dd {
 .h31 {
   color: #fd820a;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fd820a;
+  position: absolute;
+  right: 525px;
+  top: 150px;
+}
 
+li {
+  float: left;
+}
+
+li Link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:#222e34;
+}
+
+li a:hover {
+  background-color: #fd820a;
+}
+.price {
+  margin: auto;
+  width: 60%;
+  border: 2px solid #fd820a;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 5px 0px black;
+  border: 2px solid #fd820a;
+  width: 400px;
+  background-color: #fd820a;
+}
+/*.divSties {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 100px;
+}*/
+h1 {
+  color: #fd820a;
+}
