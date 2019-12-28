@@ -4,6 +4,7 @@ import Header from './components/Header';
 import DataT1 from './components/DataT1';
 import About from './components/About';
 import Price from './components/Price';
+import Show from './components/Show';
 
 let baseUrl = '';
 let baseUrl2 = '';
@@ -73,6 +74,7 @@ class App extends React.Component {
       <Switch>
       <Route path="/about" component={About} />
       <Route path="/price" component={Price}/>
+      <Route path="/show" component={Show}/>
       </Switch>
       </Router>
       </>

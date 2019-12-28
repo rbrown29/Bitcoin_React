@@ -36,9 +36,9 @@ componentDidMount () {
 			</ul>	
 			<Header />
 			<div className="price">
-			Rank &nbsp;&nbsp;&nbsp; Name &nbsp;&nbsp;&nbsp; Price &nbsp;&nbsp;&nbsp; %up/down
+			___________________________________Rank &nbsp;&nbsp;&nbsp; Name &nbsp;&nbsp;&nbsp; Price &nbsp;&nbsp;&nbsp; %up/down____________________________
 
-			_______________________________________________________________
+			
 			{this.state.priceHistory.map((bpi, index) =>
 				<p key={index}>{bpi.rank}.&nbsp;&nbsp;&nbsp;{bpi.name}&nbsp;&nbsp;&nbsp;{bpi.price_usd}&nbsp;&nbsp;&nbsp;{bpi.percent_change_1h}%</p>
 			)}

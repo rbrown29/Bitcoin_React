@@ -51,6 +51,9 @@ dt {
   color:  #222e34;
   left: 100px;
 }
+dt a {
+   color:  #222e34;
+}
   
 dd {
   
@@ -68,7 +71,7 @@ ul {
   overflow: hidden;
   background-color: #fd820a;
   position: absolute;
-  right: 525px;
+  right: 500px;
   top: 150px;
 }
 
@@ -85,8 +88,9 @@ li Link {
   color:#222e34;
 }
 
-li a:hover {
+li a {
   background-color: #fd820a;
+  color: #222e34;
 }
 .price {
   margin: auto;
@@ -95,7 +99,6 @@ li a:hover {
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 5px 0px black;
   border: 2px solid #fd820a;
-  width: 400px;
   background-color: #fd820a;
 }
 /*.divSties {
@@ -107,4 +110,30 @@ li a:hover {
 }*/
 h1 {
   color: #fd820a;
+}
+a {
+  text-decoration: none;
+  color: #fd820a;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+}
+input {
+  width: 13.6%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
