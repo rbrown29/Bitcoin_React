@@ -7,13 +7,13 @@ class DataT1 extends React.Component {
 		return (
 		<div className="div1">
 			{this.props.news.map((article, index) =>
-			        <Link to={{
+			        <Link key={index}  to={{
  						 pathname: '/Show',
   						 state: {
     						news: this.props.news[index]
  					 	} 
  					 }}>
-					<dl key={index} className="dlOne">
+					<dl className="dlOne">
 					<dt><h3>{article.title}</h3></dt>
 	    			<dd id="title"></dd>
 	    			<dt>-----------------------------------------------------------------------------</dt>
