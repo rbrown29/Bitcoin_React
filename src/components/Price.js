@@ -29,36 +29,32 @@ componentDidMount () {
 	render () {
 		console.log(this.state.priceHistory)
 		return (
-			<div>
-			<ul>	
+		<>
+		<ul>	
 			<li><Link to="/">Home |</Link></li>
 			<li><Link to="/About"> About |</Link></li>
 			</ul>	
 			<Header />
-			<div className="price">
-			___________________________________Rank &nbsp;&nbsp;&nbsp; Name &nbsp;&nbsp;&nbsp; Price &nbsp;&nbsp;&nbsp; %up/down____________________________
-
-			
+			<table>
+				<thead>
+        			<tr><th>RANK</th>
+        			<th>Name</th>
+          			<th>Price</th>
+          			<th>Percent up/down</th>
+        			</tr>
+      			</thead>
 			{this.state.priceHistory.map((bpi, index) =>
-				<p key={index}>{bpi.rank}.&nbsp;&nbsp;&nbsp;{bpi.name}&nbsp;&nbsp;&nbsp;{bpi.price_usd}&nbsp;&nbsp;&nbsp;{bpi.percent_change_1h}%</p>
+      			<tbody  key={index}>
+       				<tr>
+          			<td>{bpi.rank}</td>
+          			<td>{bpi.name}</td>
+          			<td>{bpi.price_usd}</td>
+         			<td>{bpi.percent_change_1h}</td>
+        			</tr>
+        		</tbody>
 			)}
-			</div>
-			<div className="divSites">
-			<div>
-			<br />
-			<br />
-			<br />
-			<h1>LINKS</h1>
-			<a href="https://www.coindesk.com/" target="_blank" rel="noopener noreferrer">www.coindesk.com</a>&nbsp;&nbsp;&nbsp;
-			<a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank" rel="noopener noreferrer">www.coinmarketcap.com</a>&nbsp;&nbsp;&nbsp;
-			<a href="https://www.coinbase.com/" target="_blank" rel="noopener noreferrer">www.coinbase.com</a>&nbsp;&nbsp;&nbsp;
-			<a href="https://www.blockchain.com/prices" target="_blank" rel="noopener noreferrer">www.blockchain.com</a><br /><br />
-			<a href="https://markets.businessinsider.com/currencies/btc-usd" target="_blank" rel="noopener noreferrer">www.markets.businessinsider.com</a>&nbsp;&nbsp;&nbsp;
-			<a href="https://www.binance.us/en" target="_blank" rel="noopener noreferrer">www.binance.us/en</a>&nbsp;&nbsp;&nbsp;
-			<a href="https://gemini.com/" target="_blank" rel="noopener noreferrer">www.gemini.com/</a>&nbsp;&nbsp;&nbsp;
-			</div>
-			</div>
-			</div>
+			</table>
+		</>
 		)
 	}
 }

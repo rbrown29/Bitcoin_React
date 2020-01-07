@@ -140,9 +140,24 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-   border-color: #fd820a;
+  border-color: #fd820a;
 }
 .div3 {
   display: flex;
   justify-content: center;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #fd820a;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
 }
