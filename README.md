@@ -2,7 +2,6 @@
 
 ### Author: Richard Brown
 
-<a href="https://pure-reaches-64691.herokuapp.com/">Heroku Depolyment site</a><br>
 <a href="https://github.com/rbrown29/Bitcoin_React">FrontEnd-GitHub Project</a><br>
 <a href="https://github.com/rbrown29/Bitcoin_api">BackEnd-GitHub Project</a>
 
